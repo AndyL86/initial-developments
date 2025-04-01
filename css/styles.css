@@ -5,6 +5,10 @@ body {
     background-attachment: fixed;
 }
 
+img {
+    border-style: groove;
+}
+
 .card {
     padding: 15px;
     display: flex;
@@ -12,10 +16,19 @@ body {
     flex-wrap: nowrap;
 }
 
+.card-body {
+    padding: 0px 30px;
+}
+
 .site-container {
     padding: 80px 120px;
     width: 100%;
     margin: auto;
+}
+
+.card-title {
+    text-align: center;
+    padding: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -25,5 +38,13 @@ body {
 
     .col-6 {
         width: 100%;
+    }
+
+    .site-container {
+        padding: 60px 20px;
+    }
+
+    .card-body {
+        padding: 0px 10px;
     }
 }
