@@ -63,4 +63,8 @@ h1, h3 {
     .card-body {
         padding: 0px 10px;
     }
+
+    .portfolio-header {
+        margin: 25px 50px 0px;
+    }
 }
