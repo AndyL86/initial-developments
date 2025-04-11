@@ -39,14 +39,26 @@ img {
     padding: 15px;
 }
 
-h1, h3, li {
+h1, h3 {
     font-family: "Oswald", sans-serif;
+}
+
+h2, h4, li {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.masthead-avatar {
+    max-width: 100%;
+    padding: 60px 0px;
 }
 
 .portfolio-header {
     background-color: #888D81;
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 .portfolio-heading {
@@ -79,10 +91,44 @@ h1, h3, li {
     background-color: #9CA092;
 }
 
-@media screen and (max-width: 768px) {
-    .card {
+.about-me {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.img-fluid {
+    border: 1px black solid;
+    border-radius: 3px;
+}
+
+.main-portfolio-img {
+    height: 300px;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+}
+
+.main-portfolio-img:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+@media screen and (max-width: 991px) {
+    .about-me {
         flex-direction: column;
     }
+}
+
+@media screen and (min-width: 769px) {
+    .masthead-avatar {
+        padding-top: 120px!important;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* .card {
+        flex-direction: column;
+    } */
 
     .col-6 {
         width: 100%;
@@ -92,9 +138,9 @@ h1, h3, li {
         padding: 60px 20px;
     }
 
-    .card-body {
+    /* .card-body {
         padding: 0px 10px;
-    }
+    } */
 
     .masthead-avatar {
         max-width: 70%;
@@ -102,5 +148,24 @@ h1, h3, li {
 
     .portfolio-header {
         padding-top: 6rem;
+    }
+
+    .main-portfolio-img {
+        padding: 15px;
+    }
+
+    .portfolio-item {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .about-me img {
+        max-width: 100%;
+    }
+
+    .lead {
+        padding: 15px;
+        text-align: justify;
     }
 }

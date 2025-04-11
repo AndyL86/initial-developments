@@ -11,7 +11,9 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e83fc612cc.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -39,7 +41,7 @@
     <header class="portfolio-header text-white text-center">
       <div class="container d-flex align-items-center flex-column">
           <!-- Masthead Avatar Image-->
-          <img class="masthead-avatar mb-5" src="assets/initial-developments.png" alt="..." />
+          <img class="masthead-avatar" src="assets/initial-developments.png" alt="initial developments logo"/>
           <!-- Masthead Heading-->
           <h1 class="masthead-heading text-uppercase mb-0">Andrew Linehan</h1>
           <hr>
@@ -60,7 +62,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid" src="assets/burrandbarks.png" alt="Burr and barks site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/burrandbarks.png" alt="Burr and barks site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 2-->
@@ -69,7 +71,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid" src="assets/east-city.png" alt="East city site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/east-city.png" alt="East city site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 3-->
@@ -78,7 +80,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid" src="assets/throwback-developments.png" alt="Throwback developments site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/throwback-developments.png" alt="Throwback developments site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 4-->
@@ -87,7 +89,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid" src="assets/gt-modellista.png" alt="GT Modellista site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/gt-modellista.png" alt="GT Modellista site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 5-->
@@ -96,7 +98,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid" src="assets/hangman-86.png" alt="Hangman 86 site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/hangman-86.png" alt="Hangman 86 site preview" style="min-height: 303px;"/>
                   </div>
               </div>
               <!-- Portfolio Item 6-->
@@ -105,7 +107,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid" src="assets/large-explosion-idea.png" alt="Large explosion idea site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/large-explosion-idea.png" alt="Large explosion idea site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 7-->
@@ -114,7 +116,7 @@
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div class="portfolio-item-caption-content text-center text-white"></div>
                     </div>
-                    <img class="img-fluid" src="assets/darkglass-tinting.png" alt="Dark Glass tinting site preview" />
+                    <img class="img-fluid main-portfolio-img" src="assets/darkglass-tinting.png" alt="Dark Glass tinting site preview" />
                 </div>
             </div>
           </div>
@@ -126,16 +128,19 @@
         <!-- About Section Heading-->
         <h2 class="portfolio-heading text-center text-uppercase text-white">About</h2>
         <!-- About Section Content-->
-        <div class="row">
-            <div class="col-lg-4 ms-auto"><p class="lead">Versatile and driven Web Developer with 2 years of experience building user-friendly, high-performing E-commerce
-              solutions. While highly proficient in Shopify development—including Liquid templating, user experience optimisation
-              and cross-functional collaboration—I am eager to expand my expertise into broader front-end and full-stack
-              development roles. Passionate about learning new technologies, solving complex problems and contributing to
-              dynamic, innovative projects, I am seeking opportunities beyond the junior level where I can leverage my skills to
-              deliver impactful digital experiences. With a strong foundation in web technologies, excellent teamwork abilities and a
-              commitment to high-quality results, I am excited to take the next step in my career.</p></div>
-           
-        </div>
+          <div class="about-me">
+            <div>
+              <img src="assets/avatar.jpg" alt="pictue of me">
+            </div>
+              <div class="col-lg-4 ms-auto"><p class="lead">Versatile and driven Web Developer with 2 years of experience building user-friendly, high-performing E-commerce
+                solutions. While highly proficient in Shopify development—including Liquid templating, user experience optimisation
+                and cross-functional collaboration—I am eager to expand my expertise into broader front-end and full-stack
+                development roles. Passionate about learning new technologies, solving complex problems and contributing to
+                dynamic, innovative projects, I am seeking opportunities beyond the junior level where I can leverage my skills to
+                deliver impactful digital experiences. With a strong foundation in web technologies, excellent teamwork abilities and a
+                commitment to high-quality results, I am excited to take the next step in my career.</p>
+              </div>
+          </div>
     </div>
 </section>
   <!-- Footer-->
@@ -145,7 +150,7 @@
             <!-- Footer Location-->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Location</h4>
-                <p class="lead mb-0">
+                <p class="mb-0">
                     Rothwell, Leeds
                     <br />
                     England
@@ -156,7 +161,10 @@
                 <h4 class="text-uppercase mb-4">Contact</h4>
                 <a class="btn btn-outline-light btn-social mx-1" href="mailto:alinehan89@outlook.com"><i class="fa-regular fa-envelope" style="color: #dee2e8;"></i></a>
                 <a class="btn btn-outline-light btn-social mx-1" href="tel:07713465317"><i class="fa-solid fa-phone" style="color: #dee2e8;"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="www.linkedin.com/in/a-linehan" target="_blank"><i class="fab fa-fw fa-linkedin-in" style="color: #dee2e8;"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/a-linehan" target="_blank"><i class="fab fa-fw fa-linkedin-in" style="color: #dee2e8;"></i></a>
+            </div>
+            <div class="col-lg-4 mb-lg-0 brand-logo">
+              <img src="assets/initial-developments.png" alt="initial developments logo" width="300px" height="auto">
             </div>
         </div>
     </div>
@@ -180,7 +188,7 @@
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/burrandbarks.png" alt="Burr and barks site preview" />
                             <!-- Portfolio Modal - Link -->
-                            <a class="p-2" href="https://burrandbarks.co.uk/" target="-blank">Website link</a>
+                            <a class="btn btn-primary p2" href="https://burrandbarks.co.uk/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">This small Dog Grooming business website was built using HTML, CSS, and JavaScript, providing a clean, user-friendly experience for pet owners. 
                               The site features a responsive design, ensuring seamless navigation across devices. Google Analytics and Tag Manager are integrated for tracking user engagement and optimising performance. The website is live on Google, enhancing the business's online presence. 
@@ -213,7 +221,7 @@
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/east-city.png" alt="east city game site preview" />
                             <!-- Portfolio Modal - Link -->
-                            <a class="p-2" href="https://andyl86.github.io/east-city-game/" target="-blank">Website link</a>
+                            <a class="btn btn-primary p2" href="https://andyl86.github.io/east-city-game/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">East City is a JavaScript-based game that I built as a passion project to enhance my development skills. The game is based on a retro racing game from my childhood. Developed with HTML, CSS, and JavaScript, the game delivers an engaging and interactive experience. 
                               Players start by clicking “Start”, triggering the randomisation of six car cards. They must strategically select the best-performing vehicles, considering various attributes. Once all six cars are chosen, the game calculates the Total Performance score and displays a dynamic progress bar at the top. 
@@ -247,7 +255,7 @@
                             <h5 class="p-1">Grade Acheived - Merit</h5>
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/throwback-developments.png" alt="..." />
-                            <a class="p-2" href="https://throwback-developments.herokuapp.com/" target="-blank">Website link</a>
+                            <a class="btn btn-primary p2" href="https://throwback-developments.herokuapp.com/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">Throwback Developments is a fully functioning E-Commerce store supplying retro vehicle parts, utilising Stripe as the payment processor and incorporating user authentication and full CRUD functionality for the management of products. The site content was created from scratch using Adobe Photoshop and AI for the product descriptions.</p>
                             <p class="p-2"><strong>Libraries and Programs used:</strong>
@@ -280,7 +288,7 @@
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/gt-modellista.png" alt="GT Modellista site preview" />
                             <!-- Portfolio Modal - Link-->
-                            <a class="p-2" href="https://gt-modellista.herokuapp.com/" target="-blank">Website link</a>
+                            <a class="btn btn-primary p2" href="https://gt-modellista.herokuapp.com/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">GT Modellista is blog site for car enthusiasts to share their passions with other like-minded individuals from around the world. This project is a Full-Stack development website built using the Django framework. GT Modellista allows registered users to post articles in the Build Threads section of the page and view, edit or delete their posts in the My Threads section. 
                               Registered users are also able to like and comment on posts made by other members of the community.</p>
@@ -314,7 +322,7 @@
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/hangman-86.png" alt="Hangman 86 site preview" />
                             <!-- Portfolio Modal - Link-->
-                            <a class="p-2" href="https://hangman-86.herokuapp.com/" target="-blank">Website link</a>
+                            <a class="btn btn-primary p2" href="https://hangman-86.herokuapp.com/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">Hangman'86 is a Python terminal game in which players can try to guess a randomly generated word by inputting letters, this runs on the Code Institute mock terminal on Heroku. The game is over when the player either guesses the word correctly or the maximum number of incorrect guesses has been reached and the hangman gallows image is completed. 
                               The target audience is developers working in the IDE who enjoy playing straight forward games in their downtime or fellow beginner coders looking for inspiration for their next challenge.</p>
@@ -348,7 +356,7 @@
                             <!-- Portfolio Modal - Image-->
                             <img class="img-fluid rounded mb-5" src="assets/large-explosion-idea.png" alt="Large Explosion Idea site preview" />
                             <!-- Portfolio Modal - Link-->
-                            <a class="p-2" href="https://andyl86.github.io/Portfolio2/" target="-blank">Website link</a>
+                            <a class="btn btn-primary p2" href="https://andyl86.github.io/Portfolio2/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">Large Explosion Idea - Rock, Paper, Scissors, Lizard, Spock' (RPSLS) is a game designed to demonstrate how Javascript can be easily utilised for a variety of requirements when building a website. The site is targeted towards fans of web based games and the popular tv series 'The Big Bang Theory' as well as fellow developers looking to understand alternative Javascript concepts.
                               Large Explosion Idea - RPSLS is a fully responsive interactive game that asks users to choose one of the 5 options (Rock, Paper, Scissors, Lizard, Spock) and in turn generates a random computer choice in response, a result is displayed to declare Win, Lose or Tie and the first player to reach a score of 10 wins the match.</p>
@@ -382,7 +390,7 @@
                           <!-- Portfolio Modal - Image-->
                           <img class="img-fluid rounded mb-5" src="assets/darkglass-tinting.png" alt="DarkGlass Window Tinting site preview" />
                           <!-- Portfolio Modal - Link-->
-                          <a class="p-2" href="https://andyl86.github.io/Portfolio1/" target="-blank">Website link</a>
+                          <a class="btn btn-primary p2" href="https://andyl86.github.io/Portfolio1/" target="-blank">Website link</a>
                           <!-- Portfolio Modal - Text-->
                           <p class="card-text p-2">Dark Glass Window Tinting is a site that is designed to provide useful information to help people understand the benefits of tinting vehicle windows. The site is targeted towards potential and existing customers based around the Bradford area who are looking for a professional and established vehicle tinting service.
                             The site uses a single page scroller format for compatibility across various devices without over complicating my code. This gives site a much smoother flow and keeps in line with the intended prestigeous, modern look.</p>
