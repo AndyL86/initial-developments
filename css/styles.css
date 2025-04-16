@@ -1,10 +1,22 @@
 /* Navbar */
-.nav-container {
+/* .nav-container {
     padding-left: 40px;
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+} */
 
 .navbar {
-    background-color: #252925;
+    background-color: #eaefef;
+    border-bottom: 8px black solid;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
 }
 
 .nav-item {
@@ -43,10 +55,17 @@ h1, h3 {
     font-family: "Oswald", sans-serif;
 }
 
-h2, h4, li {
+h2, h4 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
+}
+
+li {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -55,10 +74,27 @@ h2, h4, li {
     padding: 60px 0px;
 }
 
+.masthead-heading {
+    text-shadow: 5px 5px 3px black;
+    font-size: 6rem;
+    font-weight: 700;
+    color: #e69b0c;
+}
+
+.masthead-subheading {
+    text-shadow: 5px 5px 3px black;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(10, 177, 177);
+}
+
 .portfolio-header {
-    background-color: #888D81;
-    padding-top: 2rem;
+    background-image: url(/assets/background-img1.webp);
+    padding-top: 12rem;
     padding-bottom: 4rem;
+    height: 600px;
+    background-size: contain;
+    border-bottom: 8px black solid;
 }
 
 .portfolio-heading {
@@ -120,15 +156,18 @@ h2, h4, li {
     }
 }
 
+@media screen and (min-width: 991px) {
+    .navbar-brand {
+        width: 100%;
+    }
+}
+
 @media screen and (min-width: 769px) {
     .masthead-avatar {
         padding-top: 120px!important;
     }
 }
 @media screen and (max-width: 768px) {
-    /* .card {
-        flex-direction: column;
-    } */
 
     .col-6 {
         width: 100%;
@@ -138,16 +177,15 @@ h2, h4, li {
         padding: 60px 20px;
     }
 
-    /* .card-body {
-        padding: 0px 10px;
-    } */
-
     .masthead-avatar {
         max-width: 70%;
     }
 
     .portfolio-header {
-        padding-top: 6rem;
+        padding-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
     }
 
     .main-portfolio-img {
@@ -168,5 +206,13 @@ h2, h4, li {
     .lead {
         padding: 15px;
         text-align: justify;
+    }
+
+    .masthead-heading {
+        font-size: 4rem;
+    }
+
+    .masthead-subheading {
+        font-size: 2rem;
     }
 }

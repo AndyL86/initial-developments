@@ -18,37 +18,58 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="nav-container">
-        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav text-black text-uppercase fs-2">
             <li class="nav-item">
-              <a class="nav-link text-white fs-3 active" aria-current="page" href="#portfolio">Portfolio</a>
+              <a class="nav-link active" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-3" href="#about">About</a>
+              <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white fs-3" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
+        <a class="navbar-brand" href="#">
+          <img src="assets/initial-developments.webp" alt="initial developments logo" width="160" height="74">
+        </a>
       </div>
     </nav>
     <!-- Header Section-->
-    <header class="portfolio-header text-white text-center">
-      <div class="container d-flex align-items-center flex-column">
-          <!-- Masthead Avatar Image-->
-          <img class="masthead-avatar" src="assets/initial-developments.png" alt="initial developments logo"/>
+    <header class="portfolio-header">
+      <div class="container d-flex flex-column">
           <!-- Masthead Heading-->
           <h1 class="masthead-heading text-uppercase mb-0">Andrew Linehan</h1>
-          <hr>
           <!-- Masthead Subheading-->
           <p class="masthead-subheading font-weight-light mb-0">Full Stack Web Developer</p>
       </div>
     </header>
+  <!-- About Section-->
+  <section class="page-section about-section text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="portfolio-heading text-center text-uppercase text-white">/// About</h2>
+        <!-- About Section Content-->
+          <div class="about-me">
+            <div>
+              <img src="assets/avatar.webp" alt="pictue of me">
+            </div>
+              <div class="col-lg-4 ms-auto"><p class="lead">Versatile and driven Web Developer with 2 years of experience building user-friendly, high-performing E-commerce
+                solutions. While highly proficient in Shopify development—including Liquid templating, user experience optimisation
+                and cross-functional collaboration—I am eager to expand my expertise into broader front-end and full-stack
+                development roles. Passionate about learning new technologies, solving complex problems and contributing to
+                dynamic, innovative projects, I am seeking opportunities beyond the junior level where I can leverage my skills to
+                deliver impactful digital experiences. With a strong foundation in web technologies, excellent teamwork abilities and a
+                commitment to high-quality results, I am excited to take the next step in my career.</p>
+              </div>
+          </div>
+      </div>
+  </section>
     <!-- Portfolio Section-->
     <section class="page-section portfolio" id="portfolio">
       <div class="container">
@@ -62,7 +83,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid main-portfolio-img" src="assets/burrandbarks.png" alt="Burr and barks site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/burrandbarks.webp" alt="Burr and barks site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 2-->
@@ -71,7 +92,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid main-portfolio-img" src="assets/east-city.png" alt="East city site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/east-city.webp" alt="East city site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 3-->
@@ -80,7 +101,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid main-portfolio-img" src="assets/throwback-developments.png" alt="Throwback developments site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/throwback-developments.webp" alt="Throwback developments site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 4-->
@@ -89,7 +110,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid main-portfolio-img" src="assets/gt-modellista.png" alt="GT Modellista site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/gt-modellista.webp" alt="GT Modellista site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 5-->
@@ -98,7 +119,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid main-portfolio-img" src="assets/hangman-86.png" alt="Hangman 86 site preview" style="min-height: 303px;"/>
+                      <img class="img-fluid main-portfolio-img" src="assets/hangman-86.webp" alt="Hangman 86 site preview" style="min-height: 303px;"/>
                   </div>
               </div>
               <!-- Portfolio Item 6-->
@@ -107,7 +128,7 @@
                       <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                           <div class="portfolio-item-caption-content text-center text-white"></div>
                       </div>
-                      <img class="img-fluid main-portfolio-img" src="assets/large-explosion-idea.png" alt="Large explosion idea site preview" />
+                      <img class="img-fluid main-portfolio-img" src="assets/large-explosion-idea.webp" alt="Large explosion idea site preview" />
                   </div>
               </div>
               <!-- Portfolio Item 7-->
@@ -116,33 +137,12 @@
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div class="portfolio-item-caption-content text-center text-white"></div>
                     </div>
-                    <img class="img-fluid main-portfolio-img" src="assets/darkglass-tinting.png" alt="Dark Glass tinting site preview" />
+                    <img class="img-fluid main-portfolio-img" src="assets/darkglass-tinting.webp" alt="Dark Glass tinting site preview" />
                 </div>
             </div>
           </div>
       </div>
   </section>
-  <!-- About Section-->
-  <section class="page-section about-section text-white mb-0" id="about">
-    <div class="container">
-        <!-- About Section Heading-->
-        <h2 class="portfolio-heading text-center text-uppercase text-white">/// About</h2>
-        <!-- About Section Content-->
-          <div class="about-me">
-            <div>
-              <img src="assets/avatar.jpg" alt="pictue of me">
-            </div>
-              <div class="col-lg-4 ms-auto"><p class="lead">Versatile and driven Web Developer with 2 years of experience building user-friendly, high-performing E-commerce
-                solutions. While highly proficient in Shopify development—including Liquid templating, user experience optimisation
-                and cross-functional collaboration—I am eager to expand my expertise into broader front-end and full-stack
-                development roles. Passionate about learning new technologies, solving complex problems and contributing to
-                dynamic, innovative projects, I am seeking opportunities beyond the junior level where I can leverage my skills to
-                deliver impactful digital experiences. With a strong foundation in web technologies, excellent teamwork abilities and a
-                commitment to high-quality results, I am excited to take the next step in my career.</p>
-              </div>
-          </div>
-    </div>
-</section>
   <!-- Footer-->
   <footer class="footer text-center" id="contact">
     <div class="container">
@@ -159,12 +159,12 @@
             <!-- Footer Social Icons-->
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="text-uppercase mb-4">Contact</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="mailto:alinehan89@outlook.com"><i class="fa-regular fa-envelope" style="color: #dee2e8;"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="tel:07713465317"><i class="fa-solid fa-phone" style="color: #dee2e8;"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/a-linehan" target="_blank"><i class="fab fa-fw fa-linkedin-in" style="color: #dee2e8;"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="mailto:alinehan89@outlook.com" aria-label="contact via email"><i class="fa-regular fa-envelope" style="color: #dee2e8;"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="tel:07713465317" aria-label="Contant via phone"><i class="fa-solid fa-phone" style="color: #dee2e8;"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/a-linehan" target="_blank" aria-label="Linked in profile"><i class="fab fa-fw fa-linkedin-in" style="color: #dee2e8;"></i></a>
             </div>
             <div class="col-lg-4 mb-lg-0 brand-logo">
-              <img src="assets/initial-developments.png" alt="initial developments logo" width="300px" height="auto">
+              <img src="assets/initial-developments.webp" alt="initial developments logo" width="300px" height="auto">
             </div>
         </div>
     </div>
@@ -186,7 +186,7 @@
                             <!-- Portfolio Modal - Title-->
                             <h3 class="card-title">Burr and Barks</h3>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/burrandbarks.png" alt="Burr and barks site preview" />
+                            <img class="img-fluid rounded mb-5" src="assets/burrandbarks.webp" alt="Burr and barks site preview" />
                             <!-- Portfolio Modal - Link -->
                             <a class="btn btn-primary p2" href="https://burrandbarks.co.uk/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
@@ -219,7 +219,7 @@
                             <!-- Portfolio Modal - Title-->
                             <h3 class="card-title">East City Game</h3>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/east-city.png" alt="east city game site preview" />
+                            <img class="img-fluid rounded mb-5" src="assets/east-city.webp" alt="east city game site preview" />
                             <!-- Portfolio Modal - Link -->
                             <a class="btn btn-primary p2" href="https://andyl86.github.io/east-city-game/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
@@ -254,7 +254,7 @@
                             <h5 class="p-1">Course Project 5 - E-Commerce specialism</h5>
                             <h5 class="p-1">Grade Acheived - Merit</h5>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/throwback-developments.png" alt="..." />
+                            <img class="img-fluid rounded mb-5" src="assets/throwback-developments.webp" alt="..." />
                             <a class="btn btn-primary p2" href="https://throwback-developments.herokuapp.com/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
                             <p class="card-text p-2">Throwback Developments is a fully functioning E-Commerce store supplying retro vehicle parts, utilising Stripe as the payment processor and incorporating user authentication and full CRUD functionality for the management of products. The site content was created from scratch using Adobe Photoshop and AI for the product descriptions.</p>
@@ -286,7 +286,7 @@
                             <h5 class="p-1">Course Project 4</h5>
                             <h5 class="p-1">Grade Acheived - Merit</h5>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/gt-modellista.png" alt="GT Modellista site preview" />
+                            <img class="img-fluid rounded mb-5" src="assets/gt-modellista.webp" alt="GT Modellista site preview" />
                             <!-- Portfolio Modal - Link-->
                             <a class="btn btn-primary p2" href="https://gt-modellista.herokuapp.com/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
@@ -320,7 +320,7 @@
                             <h5 class="p-1">Course Project 3</h5>
                             <h5 class="p-1">Grade Acheived - Merit</h5>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/hangman-86.png" alt="Hangman 86 site preview" />
+                            <img class="img-fluid rounded mb-5" src="assets/hangman-86.webp" alt="Hangman 86 site preview" />
                             <!-- Portfolio Modal - Link-->
                             <a class="btn btn-primary p2" href="https://hangman-86.herokuapp.com/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
@@ -354,7 +354,7 @@
                             <h5 class="p-1">Course Project 2</h5>
                             <h5 class="p-1">Grade Acheived - Merit</h5>
                             <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/large-explosion-idea.png" alt="Large Explosion Idea site preview" />
+                            <img class="img-fluid rounded mb-5" src="assets/large-explosion-idea.webp" alt="Large Explosion Idea site preview" />
                             <!-- Portfolio Modal - Link-->
                             <a class="btn btn-primary p2" href="https://andyl86.github.io/Portfolio2/" target="-blank">Website link</a>
                             <!-- Portfolio Modal - Text-->
@@ -388,7 +388,7 @@
                           <h5 class="p-1">Course Project 1</h5>
                           <h5 class="p-1">Grade Acheived - Merit</h5>
                           <!-- Portfolio Modal - Image-->
-                          <img class="img-fluid rounded mb-5" src="assets/darkglass-tinting.png" alt="DarkGlass Window Tinting site preview" />
+                          <img class="img-fluid rounded mb-5" src="assets/darkglass-tinting.webp" alt="DarkGlass Window Tinting site preview" />
                           <!-- Portfolio Modal - Link-->
                           <a class="btn btn-primary p2" href="https://andyl86.github.io/Portfolio1/" target="-blank">Website link</a>
                           <!-- Portfolio Modal - Text-->
@@ -412,7 +412,7 @@
     <div class="row row-cols-1 g-4 site-container">
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/burrandbarks.png" class="card-img-top" alt="Burr and barks site preview">
+            <img src="/assets/burrandbarks.webp" class="card-img-top" alt="Burr and barks site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">Burr and Barks</h3>
@@ -427,7 +427,7 @@
       </div>
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/east-city.png" class="card-img-top" alt="east city game site preview">
+            <img src="/assets/east-city.webp" class="card-img-top" alt="east city game site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">East City Game</h3>
@@ -442,7 +442,7 @@
       </div>
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/throwback-developments.png" class="card-img-top" alt="Throwback developments site preview">
+            <img src="/assets/throwback-developments.webp" class="card-img-top" alt="Throwback developments site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">Throwback Developments</h3>
@@ -457,7 +457,7 @@
       </div>
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/gt-modellista.png" class="card-img-top" alt="GT Modellista site preview">
+            <img src="/assets/gt-modellista.webp" class="card-img-top" alt="GT Modellista site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">GT Modellista</h3>
@@ -473,7 +473,7 @@
       </div>
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/hangman-86.png" class="card-img-top" alt="Large Explosion Idea site preview">
+            <img src="/assets/hangman-86.webp" class="card-img-top" alt="Large Explosion Idea site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">Hangman 86</h3>
@@ -489,7 +489,7 @@
       </div>
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/large-explosion-idea.png" class="card-img-top" alt="Large Explosion Idea site preview">
+            <img src="/assets/large-explosion-idea.webp" class="card-img-top" alt="Large Explosion Idea site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">Large Explosion Idea</h3>
@@ -505,7 +505,7 @@
       </div>
       <div class="card mb-3">
         <div class="col-6">
-            <img src="/assets/darkglass-tinting.png" class="card-img-top" alt="DarkGlass Window Tinting site preview">
+            <img src="/assets/darkglass-tinting.webp" class="card-img-top" alt="DarkGlass Window Tinting site preview">
         </div>
         <div class="card-body col-6">
           <h3 class="card-title">Dark Glass Window Tinting</h3>
