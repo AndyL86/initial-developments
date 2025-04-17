@@ -170,7 +170,7 @@ li {
 .portfolio-header {
     background-image: url(/assets/background-img1.webp);
     padding-top: 13rem;
-    height: 600px;
+    height: 650px;
     background-size: contain;
     border-bottom: 8px black solid;
 }
@@ -203,14 +203,29 @@ li {
 
 /* About section */
 .about-section {
-    background-color: #84857F;
+    background-image: url(/assets/me.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 1200px;
 }
 
 .about-me {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    flex-direction: row;
+}
+
+.about-text {
+    padding: 15px;
+    text-align: justify;
+    font-size: 3rem;
+}
+
+.about-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px;
 }
 
 /* Footer */
@@ -223,12 +238,6 @@ li {
 
 .copyright {
     background-color: #252925;
-}
-
-@media screen and (max-width: 991px) {
-    .about-me {
-        flex-direction: column;
-    }
 }
 
 @media screen and (min-width: 991px) {
@@ -252,13 +261,18 @@ li {
     }
 
     .portfolio-header {
-        padding-top: 9rem;
+        padding-top: 10rem;
         display: flex;
         flex-direction: column;
         background-size: cover;
     }
 
     .portfolio-heading {
+        font-size: 2rem;
+        padding-bottom: 50px;
+    }
+
+    .about-heading {
         font-size: 2rem;
     }
 
@@ -277,11 +291,6 @@ li {
         max-width: 100%;
     }
 
-    .lead {
-        padding: 15px;
-        text-align: justify;
-    }
-
     .masthead-heading {
         font-size: 4rem;
     }
@@ -290,16 +299,12 @@ li {
         font-size: 2rem;
     }
 
-    .page-section {
-        padding: 7rem 0;
-    }
-
     .details-box {
         width: 230px;
         height: 250px;
         padding: 18px;
         border: 8px black solid;
-        top: 418px;
+        top: 435px;
         right: 20px;
     }
 
@@ -309,5 +314,23 @@ li {
 
     .section-header-box {
         width: 190px;
+        position: absolute;
+        top: 720px;
+        right: 170px;
+    }
+
+    .about-section {
+        background-position-x: center;
+        height: 1000px;
+        padding: 15rem 0;
+    }
+
+    .about-me {
+        position: absolute;
+        top: 840px;
+    }
+
+    .about-text {
+        font-size: 35px;
     }
 }
