@@ -31,7 +31,7 @@ li {
     border-bottom: 8px black solid;
 }
 
-.section-header-box {
+/* .section-header-box {
     background-color: #d13b3b;
     margin: 0 3rem 3rem 3rem;
     width: 300px;
@@ -66,7 +66,7 @@ li {
     3px 12px,
     0px 12px
   );
-}
+} */
 
 /* Navbar */
 .navbar {
@@ -240,12 +240,6 @@ li {
     padding-top: 35px;
 }
 
-.about-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 0px;
-}
-
 .about-flash {
     width: 500px;
     padding-top: 6px;
@@ -294,6 +288,9 @@ li {
     }
 }
 @media screen and (max-width: 768px) {
+    .navbar-brand {
+        margin-right: 5px;
+    }
 
     .col-6 {
         width: 100%;
@@ -312,10 +309,6 @@ li {
     .portfolio-heading {
         font-size: 2rem;
         padding-bottom: 50px;
-    }
-
-    .about-heading {
-        font-size: 2rem;
     }
 
     .main-portfolio-img {
@@ -354,16 +347,18 @@ li {
         padding: 8px 15px 10px;
     }
 
-    .section-header-box {
+    /* .section-header-box {
         width: 190px;
         position: absolute;
         top: 720px;
         right: 170px;
-    }
+    } */
 
     .about-section {
         background-position-y: bottom;
-        height: 530px;
+        height: 550px;
+        max-width: 65%;
+        margin: auto;
     }
 
     .about-me {
@@ -378,7 +373,18 @@ li {
     }
 
     .about-flash {
-        width: 280px;
-        padding-top: 100px;
+        width: 65%;
+        padding-top: 52px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-section {
+        max-width: 90%;
+        height: 390px;
+    }
+
+    .about-flash {
+        padding-top: 40px;
     }
 }
