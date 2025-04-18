@@ -21,7 +21,14 @@ li {
 }
 
 .page-section {
-    padding: 6rem 0;
+    padding: 6rem 0 0;
+    background-image: url(/assets/images/about-background.webp), linear-gradient(rgb(227 207 207 / 92%), rgb(229 217 217 / 71%));;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-position-y: center;
+    background-position-x: center;
+    border-bottom: 8px black solid;
 }
 
 .section-header-box {
@@ -168,7 +175,7 @@ li {
 }
 
 .portfolio-header {
-    background-image: url(/assets/background-img1.webp);
+    background-image: url(/assets/images/background-img1.webp);
     padding-top: 13rem;
     height: 650px;
     background-size: contain;
@@ -203,11 +210,15 @@ li {
 
 /* About section */
 .about-section {
-    background-image: url(/assets/me.webp);
-    background-size: cover;
+    background-image: url(/assets/images/about-me-background.png);
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
-    height: 1200px;
+    background-position-x: center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-me {
@@ -217,15 +228,46 @@ li {
 }
 
 .about-text {
-    padding: 15px;
-    text-align: justify;
-    font-size: 3rem;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: #27ff00;
+    max-width: 22%;
+    padding-top: 35px;
 }
 
 .about-heading {
     font-size: 3rem;
     font-weight: 700;
     margin: 0px;
+}
+
+.about-flash {
+    width: 500px;
+    padding-top: 6px;
+    color:#f2f;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+}
+
+.about-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 /* Footer */
@@ -304,7 +346,7 @@ li {
         height: 250px;
         padding: 18px;
         border: 8px black solid;
-        top: 435px;
+        top: 500px;
         right: 20px;
     }
 
@@ -320,9 +362,8 @@ li {
     }
 
     .about-section {
-        background-position-x: center;
-        height: 1000px;
-        padding: 15rem 0;
+        background-position-y: bottom;
+        height: 530px;
     }
 
     .about-me {
@@ -331,6 +372,13 @@ li {
     }
 
     .about-text {
-        font-size: 35px;
+        font-size: 18px;
+        max-width: 50%;
+        padding-top: 18px;
+    }
+
+    .about-flash {
+        width: 280px;
+        padding-top: 100px;
     }
 }
