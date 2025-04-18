@@ -387,4 +387,8 @@ li {
     .about-flash {
         padding-top: 40px;
     }
+
+    .masthead-heading .masthead-subheading .masthead-title {
+        text-shadow: 2px 3px 3px black;
+    }
 }
