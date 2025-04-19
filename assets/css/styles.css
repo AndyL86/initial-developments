@@ -247,6 +247,7 @@ li {
     color: #27ff00;
     max-width: 400px;
     padding-top: 35px;
+    line-height: 32px;
 }
 
 .about-flash {
@@ -376,9 +377,10 @@ li {
     }
 
     .about-text {
-        font-size: 25px;
+        font-size: 20px;
         max-width: 50%;
         padding-top: 20px;
+        line-height: 22px;
     }
 
     .about-flash {
@@ -399,7 +401,8 @@ li {
     }
 
     .about-text {
-        font-size: 16px;
+        font-size: 13px;
+        line-height: 18px;
     }
 
     .masthead-heading {
@@ -453,12 +456,12 @@ li {
 
 @media screen and (max-width: 359px) {
     .about-details-section {
-        max-width: 290px;
+        max-width: 340px;
         height: 420px;
     }
 
     .about-flash {
         max-width: 175px;
-        padding-top: 132px;
+        padding-top: 90px;
     }
 }
