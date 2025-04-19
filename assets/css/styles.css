@@ -20,7 +20,7 @@ li {
     font-style: normal;
 }
 
-.page-section {
+.about-section {
     padding: 6rem 0 0;
     background-image: url(/assets/images/about-background.webp), linear-gradient(rgb(227 207 207 / 92%), rgb(229 217 217 / 71%));;
     background-size: cover;
@@ -116,18 +116,15 @@ li {
 }
 
 .details-box {
-    background-color: #24507c;
-    width: 270px;
-    height: 320px;
-    padding: 30px;
-    border: 10px black solid;
-    position: absolute;
+    background-color: #0a0ab1;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    top: 380px;
-    right: 260px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 55%;
+    margin: auto;
+    border: 10px black solid;
+    padding: 40px;
+    margin-bottom: 5rem;
     clip-path: polygon(
     0px calc(100% - 12px),
     3px calc(100% - 12px),
@@ -162,10 +159,19 @@ li {
 
 .my-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 15px 15px 20px;
+}
+
+.my-details img {
+    margin-bottom: 10px;
+}
+
+.details-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 /* Portfolio section */
@@ -181,7 +187,7 @@ li {
     background-size: cover;
     border-bottom: 8px black solid;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: bottom;
     width: auto;
 }
 
@@ -212,13 +218,13 @@ li {
 }
 
 /* About section */
-.about-section {
+.about-details-section {
     background-image: url(/assets/images/about-me-background.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: center;
-    height: 800px;
+    height: 765px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,7 +245,7 @@ li {
     align-items: center;
     font-size: 2rem;
     color: #27ff00;
-    max-width: 22%;
+    max-width: 400px;
     padding-top: 35px;
 }
 
@@ -279,13 +285,16 @@ li {
     background-color: #252925;
 }
 
+@media screen and (min-width: 1160px) {
+    .portfolio-header {
+        height:1100px;
+    }
+}
+
 @media screen and (min-width: 991px) {
     .navbar-brand {
         width: 100%;
-    }
-
-    .portfolio-header {
-        height: 1000px;
+        background-position-y: bottom;
     }
 }
 
@@ -343,16 +352,8 @@ li {
     }
 
     .details-box {
-        width: 230px;
-        height: 250px;
-        padding: 18px;
-        border: 8px black solid;
-        top: 500px;
-        right: 20px;
-    }
-
-    .my-details {
-        padding: 8px 15px 10px;
+        max-width: 70%;
+        margin-bottom: 10px;
     }
 
     /* .section-header-box {
@@ -362,7 +363,7 @@ li {
         right: 170px;
     } */
 
-    .about-section {
+    .about-details-section {
         background-position-y: bottom;
         max-width: 530px;
         height: 630px;
@@ -375,7 +376,7 @@ li {
     }
 
     .about-text {
-        font-size: 20px;
+        font-size: 25px;
         max-width: 50%;
         padding-top: 20px;
     }
@@ -387,7 +388,7 @@ li {
 }
 
 @media screen and (max-width: 550px) {
-    .about-section {
+    .about-details-section {
         max-width: 360px;
         height: 400px;
     }
@@ -395,6 +396,10 @@ li {
     .about-flash {
         max-width: 210px;
         padding-top: 45px;
+    }
+
+    .about-text {
+        font-size: 16px;
     }
 
     .masthead-heading {
@@ -411,7 +416,7 @@ li {
 
     .masthead-heading, .masthead-subheading {
         text-shadow: 2px 3px 3px black;
-        -webkit-text-stroke: 1.5px black;
+        -webkit-text-stroke: 1.25px black;
     }
 
     .masthead-title {
@@ -423,10 +428,31 @@ li {
         padding-top: 8.5rem;
         height: 410px;
     }
+
+    .details-box {
+        max-width: 90%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .details-box {
+        flex-direction: column;
+        max-width: 70%;
+        padding: 15px
+    }
+
+    .my-details {
+        padding: 15px;
+    }
+
+    .about-section {
+        padding: 4rem 0 0;
+    }
 }
 
 @media screen and (max-width: 359px) {
-    .about-section {
+    .about-details-section {
         max-width: 290px;
         height: 420px;
     }
