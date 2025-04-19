@@ -175,11 +175,14 @@ li {
 }
 
 .portfolio-header {
-    background-image: url(/assets/images/background-img1.webp);
-    padding-top: 13rem;
-    height: 650px;
-    background-size: contain;
+    background-image: url(/assets/images/anime-trueno.webp);
+    padding-top: 10rem;
+    height: 750px;
+    background-size: cover;
     border-bottom: 8px black solid;
+    background-position-x: center;
+    background-position-y: center;
+    width: auto;
 }
 
 .portfolio-heading {
@@ -280,6 +283,10 @@ li {
     .navbar-brand {
         width: 100%;
     }
+
+    .portfolio-header {
+        height: 1000px;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -301,6 +308,7 @@ li {
 
     .portfolio-header {
         padding-top: 10rem;
+        height: 600px;
         display: flex;
         flex-direction: column;
         background-size: cover;
@@ -356,8 +364,8 @@ li {
 
     .about-section {
         background-position-y: bottom;
-        height: 550px;
-        max-width: 65%;
+        max-width: 530px;
+        height: 630px;
         margin: auto;
     }
 
@@ -367,28 +375,64 @@ li {
     }
 
     .about-text {
-        font-size: 18px;
+        font-size: 20px;
         max-width: 50%;
-        padding-top: 18px;
+        padding-top: 20px;
     }
 
     .about-flash {
-        width: 65%;
-        padding-top: 52px;
+        max-width: 330px;
+        padding-top: 105px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .about-section {
-        max-width: 90%;
-        height: 390px;
+        max-width: 360px;
+        height: 400px;
     }
 
     .about-flash {
-        padding-top: 40px;
+        max-width: 210px;
+        padding-top: 45px;
     }
 
-    .masthead-heading .masthead-subheading .masthead-title {
+    .masthead-heading {
+        font-size: 2.5rem;
+    }
+
+    .masthead-subheading {
+        font-size: 1.5rem;
+    }
+    
+    .masthead-title {
+        font-size: 1rem;
+    }
+
+    .masthead-heading, .masthead-subheading {
         text-shadow: 2px 3px 3px black;
+        -webkit-text-stroke: 1.5px black;
+    }
+
+    .masthead-title {
+        -webkit-text-stroke: 1px black;
+
+    }
+
+    .portfolio-header {
+        padding-top: 8.5rem;
+        height: 410px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    .about-section {
+        max-width: 290px;
+        height: 420px;
+    }
+
+    .about-flash {
+        max-width: 175px;
+        padding-top: 132px;
     }
 }
