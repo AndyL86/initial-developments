@@ -184,7 +184,7 @@ li {
   box-shadow: 5px 6px 5px 1px #666;
 }
 
-.left-panel, .right-panel, .middle-panel, .circle-lid {
+.left-panel, .right-panel, .circle-lid {
     background-color: #d9d9d9;
     box-shadow: inset 0px 0px 7px 2px #666;
 }
@@ -193,6 +193,7 @@ li {
     height: 250px;
     border: 2px black solid;
     width: 30%;
+    border-radius: 5px;
 }
 
 .middle-panel {
@@ -201,13 +202,15 @@ li {
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     margin-top: 5px;
-    box-shadow: 1px 8px 4px 2px #666;
+    box-shadow: 1px 8px 4px 2px #666, inset 0px 0px 7px 2px #666;
+    background-color: #cfcbcb;
 }
 
 .right-panel {
     height: 250px;
     border: 2px black solid;
     width: 30%;
+    border-radius: 5px;
 }
 
 .circle-lid {
@@ -1108,9 +1111,6 @@ li {
 }
 
 @media screen and (max-width: 450px) {
-    #portfolio {
-      margin-right: -15px;
-    }
 
     .circle-lid {
       width: 145%;
