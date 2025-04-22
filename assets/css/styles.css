@@ -888,9 +888,58 @@ li {
         padding-top: 105px;
     }
 
+}
+
+@media screen and (max-width: 550px) {
+    .about-details-section {
+        max-width: 360px;
+        height: 400px;
+    }
+
+    .about-flash {
+        max-width: 210px;
+        padding-top: 45px;
+    }
+
+    .about-text {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .masthead-heading {
+        font-size: 2.5rem;
+    }
+
+    .masthead-subheading {
+        font-size: 1.5rem;
+    }
+    
+    .masthead-title {
+        font-size: 1rem;
+    }
+
+    .masthead-heading, .masthead-subheading {
+        text-shadow: 2px 3px 3px black;
+        -webkit-text-stroke: 1.25px black;
+    }
+
+    .masthead-title {
+        -webkit-text-stroke: 1px black;
+
+    }
+
+    .portfolio-header {
+        padding-top: 8.5rem;
+        height: 410px;
+    }
+
+    .details-box {
+        max-width: 90%;
+        justify-content: space-around;
+    }
     .gameboy-container {
       height: 640px;
-      width: 430px;
+      max-width: 430px;
       margin: 0px;
     }
 
@@ -971,55 +1020,6 @@ li {
     }
 }
 
-@media screen and (max-width: 550px) {
-    .about-details-section {
-        max-width: 360px;
-        height: 400px;
-    }
-
-    .about-flash {
-        max-width: 210px;
-        padding-top: 45px;
-    }
-
-    .about-text {
-        font-size: 13px;
-        line-height: 18px;
-    }
-
-    .masthead-heading {
-        font-size: 2.5rem;
-    }
-
-    .masthead-subheading {
-        font-size: 1.5rem;
-    }
-    
-    .masthead-title {
-        font-size: 1rem;
-    }
-
-    .masthead-heading, .masthead-subheading {
-        text-shadow: 2px 3px 3px black;
-        -webkit-text-stroke: 1.25px black;
-    }
-
-    .masthead-title {
-        -webkit-text-stroke: 1px black;
-
-    }
-
-    .portfolio-header {
-        padding-top: 8.5rem;
-        height: 410px;
-    }
-
-    .details-box {
-        max-width: 90%;
-        justify-content: space-around;
-    }
-}
-
 @media screen and (max-width: 450px) {
     .details-box {
         flex-direction: column;
@@ -1034,6 +1034,47 @@ li {
     .about-section {
         padding: 4rem 0 0;
     }
+
+    .screen-container {
+      width: 370px;
+      left: 2px;
+    }
+    .gameboy-container {
+      max-width: 375px;
+    }
+
+    .screen-container .screen-headline {
+      width: 357px;
+      left: 119%;
+    }
+
+    .screen-container .screen-headline span {
+      left: 77px;
+  }
+
+  .cross-container {
+    left: 0px;
+  }
+
+  .buttons-a-b {
+    right: 18px;
+    height: 75px;
+        width: 185px;
+  }
+
+  .buttons-a-b .button-a, .buttons-a-b .button-b {
+    height: 60px;
+    width: 60px;
+  }
+
+  .screen-container .screen {
+    width: 295px;
+    left: 60%;
+  }
+
+  .screen-container .battery-light span {
+    font-size: 8px;
+}
 }
 
 @media screen and (max-width: 359px) {
