@@ -175,6 +175,67 @@ li {
 }
 
 /* Portfolio section */
+.playstation-container{
+  width: 98%;
+  display: flex;
+  flex-direction: row;
+  top: -70px;
+  position: relative;
+  box-shadow: 5px 6px 5px 1px #666;
+}
+
+.left-panel, .right-panel, .middle-panel, .circle-lid {
+    background-color: #d9d9d9;
+    box-shadow: inset 0px 0px 7px 2px #666;
+}
+
+.left-panel {
+    height: 250px;
+    border: 2px black solid;
+    width: 30%;
+}
+
+.middle-panel {
+    height: 240px;
+    width: 40%;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    margin-top: 5px;
+    box-shadow: 1px 8px 4px 2px #666;
+}
+
+.right-panel {
+    height: 250px;
+    border: 2px black solid;
+    width: 30%;
+}
+
+.circle-lid {
+  width: 330px;
+  height: 311px;
+  border: 3px black groove;
+  border-radius: 50%;
+  position: relative;
+  left: -25px;
+  top: -82px;
+}
+
+.back-button {
+  display: flex;
+  position: relative;
+  top: 155px;
+  left: 55px;
+  text-decoration: none;
+  border: 2px black solid;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 21px;
+  background-color: #aba9a9;
+  color: aqua;
+  box-shadow: inset 0px 0px 7px 2px #666;
+}
+
 .card-title {
     text-align: center;
     padding: 15px;
@@ -192,9 +253,14 @@ li {
 }
 
 .portfolio-heading {
-    font-size: 3rem;
-    font-weight: 700;
-    margin: 0px;
+    position: relative;
+    display: flex;
+    top: 195px;
+    left: 80px;
+}
+
+.portfolio-heading img {
+  width: 55%;
 }
 
 #portfolio {
@@ -300,7 +366,6 @@ li {
     font-family: 'Arial', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* transform: scale(0.5); */
     margin: 50px auto;
     flex-shrink: 0;
 }
@@ -801,8 +866,12 @@ li {
 
 @media screen and (min-width: 991px) {
     .navbar-brand {
-        width: 100%;
-        background-position-y: bottom;
+      width: 100%;
+      background-position-y: bottom;
+    }
+
+    .circle-lid {
+      width: 415px;
     }
 }
 
@@ -832,8 +901,26 @@ li {
     }
 
     .portfolio-heading {
-        font-size: 2rem;
-        padding-bottom: 50px;
+      display: flex;
+        width: 100%;
+        height: 25px;
+        top: 180px;
+        left: 52px;
+    }
+
+    .circle-lid {
+      width: 137%;
+      height: 115%;
+      left: -38px;
+      top: -40px;
+    }
+
+    .back-button {
+      left: 15px;
+      top: 165px;
+      width: 65px;
+      height: 65px;
+      padding: 15px;
     }
 
     .main-portfolio-img {
@@ -1021,6 +1108,14 @@ li {
 }
 
 @media screen and (max-width: 450px) {
+    #portfolio {
+      margin-right: -15px;
+    }
+
+    .circle-lid {
+      width: 145%;
+    }
+
     .details-box {
         flex-direction: column;
         max-width: 70%;
@@ -1050,34 +1145,43 @@ li {
 
     .screen-container .screen-headline span {
       left: 72px;
-  }
+    }
 
-  .cross-container {
-    left: 18px;
-  }
+    .cross-container {
+      left: 18px;
+    }
 
-  .buttons-a-b {
-    right: 30px;
-    height: 75px;
-    width: 175px;
-  }
+    .buttons-a-b {
+      right: 30px;
+      height: 75px;
+      width: 175px;
+    }
 
-  .buttons-a-b .button-a, .buttons-a-b .button-b {
-    height: 60px;
-    width: 60px;
-  }
+    .buttons-a-b .button-a, .buttons-a-b .button-b {
+      height: 60px;
+      width: 60px;
+    }
 
-  .screen-container .screen {
-    width: 295px;
-    left: 60%;
-  }
+    .screen-container .screen {
+      width: 295px;
+      left: 60%;
+    }
 
-  .screen-container .battery-light span {
-    font-size: 8px;
-}
+    .screen-container .battery-light span {
+      font-size: 8px;
+    }
 }
 
 @media screen and (max-width: 359px) {
+    .portfolio-heading {
+      top: 115px;
+      left: 45px;
+    }
+
+    .circle-lid {
+      top: -10px;
+    }
+
     .about-details-section {
         max-width: 340px;
         height: 420px;
@@ -1086,5 +1190,32 @@ li {
     .about-flash {
         max-width: 175px;
         padding-top: 90px;
+    }
+
+    .left-panel {
+        height: 200px;
+    }
+
+    .middle-panel {
+        height: 190px;
+        margin-top: 5px;
+    }
+
+    .right-panel {
+        height: 200px;
+    }
+
+    .circle-lid {
+        width: 190px;
+        height: 185px;
+        left: -26px;
+    }
+
+    .back-button {
+        top: 150px;
+        left: 25px;
+        width: 50px;
+        height: 45px;
+        padding: 6px;
     }
 }
