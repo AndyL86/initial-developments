@@ -1037,7 +1037,7 @@ li {
 
     .screen-container {
       max-width: 365px;
-      left: 2px;
+      left: 4px;
     }
     .gameboy-container {
       max-width: 375px;
@@ -1053,13 +1053,13 @@ li {
   }
 
   .cross-container {
-    left: 0px;
+    left: 18px;
   }
 
   .buttons-a-b {
-    right: 18px;
+    right: 30px;
     height: 75px;
-        width: 185px;
+    width: 175px;
   }
 
   .buttons-a-b .button-a, .buttons-a-b .button-b {
