@@ -944,7 +944,7 @@ li {
     }
 
     .screen-container {
-      width: 400px;
+      max-width: 400px;
       height: 307px;
       left: 15px;
       margin: 0;
@@ -1036,7 +1036,7 @@ li {
     }
 
     .screen-container {
-      width: 370px;
+      max-width: 365px;
       left: 2px;
     }
     .gameboy-container {
@@ -1044,12 +1044,12 @@ li {
     }
 
     .screen-container .screen-headline {
-      width: 357px;
-      left: 119%;
+      width: 350px;
+        left: 121%;
     }
 
     .screen-container .screen-headline span {
-      left: 77px;
+      left: 72px;
   }
 
   .cross-container {
