@@ -872,6 +872,11 @@ li {
   background-size: contain;
 }
 
+/* Shopify page */
+.shopify-section {
+  margin: 15px;
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-heading {
     left: 110px;
