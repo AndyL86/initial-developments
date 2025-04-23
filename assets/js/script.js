@@ -37,13 +37,13 @@ document.querySelectorAll(".screen").forEach((text) => {
   for (i = 0; i < menuOption.length; i++) {
     const option = menuOption[i].category;
     text.innerHTML += '<p>' + option + '</p>';
+    const highlight = document.querySelectorAll(".screen > p");
+    highlight[0].classList.toggle("active");
     }
 })
 
-const highlight = document.querySelectorAll(".screen > p");
-for (i = 0; i < highlight.length; i++) {
-  highlight[0].classList.toggle("active");
-}
+
+
 
 document.querySelectorAll("#controller_up").forEach((upButton) => {
   upButton.addEventListener('click', () => {
