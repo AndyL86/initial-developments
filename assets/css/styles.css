@@ -185,7 +185,7 @@ li {
 }
 
 .left-panel, .right-panel, .circle-lid {
-    background-color: #d9d9d9;
+    background-color: #bdbbbe;
     box-shadow: inset 0px 0px 7px 2px #666;
 }
 
@@ -873,8 +873,80 @@ li {
 }
 
 /* Shopify page */
+.shopify-portfolio {
+  background-color: #f6f8f3;
+}
+
 .shopify-section {
-  margin: 15px;
+  margin: 25px;
+}
+
+.shopify-card {
+  padding: 15px 15px 0px 15px;
+  border: 2px #99c14f solid;
+}
+
+.shopify-card p {
+  font-size: 15px;
+}
+
+.shopify-card .card-title {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+  padding: 0;
+  min-height: 53px;
+}
+
+.shopify-back {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #030304;
+  padding-left: 10px;
+}
+
+.shopify-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(171deg, rgba(229, 239, 213, 1) 0%, rgba(87, 199, 133, 1) 48%, rgba(104, 237, 182, 0.54) 100%);
+}
+
+.shopify-header-image {
+  padding: 15px 0px 5px 15px;
+  float: left;
+  margin-right: 8px;
+  width: 120px;
+  height: 120px;
+}
+
+.shopify-header-text {
+  font-size: 15px;
+  margin: 20px;
+  font-weight: 500;
+  text-align: justify;
+  color: #333c3c;
+  padding-right: 15px;
+}
+
+.shopify-header-text p {
+  margin: 0;
+  font-weight: 600;
+  padding-right: 15px;
+}
+
+.back-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+  padding-top: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -910,6 +982,23 @@ li {
     .masthead-avatar {
         padding-top: 120px!important;
     }
+    .shopify-header-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 15px;
+    }
+
+    .shopify-header-image {
+      width: 160px;
+      height: 160px;
+      margin: 20px;
+    }
+
+    .shopify-header-text {
+      font-size: 20px;
+      padding-right: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
     .navbar-brand {
@@ -940,7 +1029,7 @@ li {
         width: 100%;
         height: 30px;
         top: 180px;
-        left: 48px;
+        left: 40px;
     }
 
     .circle-lid {
