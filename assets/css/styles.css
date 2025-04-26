@@ -20,6 +20,10 @@ li {
     font-style: normal;
 }
 
+.hide {
+  display: none ;
+}
+
 .about-section {
     padding: 6rem 0 0;
     background-image: url(/assets/images/about-background.webp), linear-gradient(rgb(227 207 207 / 92%), rgb(229 217 217 / 71%));;
