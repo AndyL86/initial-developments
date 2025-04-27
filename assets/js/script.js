@@ -32,7 +32,7 @@ document.querySelectorAll("#about > div.about-details-section > p").forEach((abo
       })
 });
 const menuOption = profileDetails.filter((value) => value.category);
-document.querySelectorAll(".screen").forEach((text) => {
+document.querySelectorAll(".inner-screen").forEach((text) => {
   for (i = 0; i < menuOption.length; i++) {
     const option = menuOption[i].category;
     text.innerHTML += '<p>' + option + '</p>';
@@ -42,19 +42,19 @@ document.querySelectorAll(".screen").forEach((text) => {
 document.querySelectorAll("#controller_b").forEach((bButton) => {
   bButton.addEventListener('click', () => {
     const menuOption = profileDetails.filter((value) => value.category);
-    document.querySelectorAll(".screen").forEach((text) => {
+    document.querySelectorAll(".inner-screen").forEach((text) => {
     text.innerHTML = "";
       for (i = 0; i < menuOption.length; i++) {
         const option = menuOption[i].category;
         text.innerHTML += '<p>' + option + '</p>';
         }
-        document.querySelector("#profile > div > div.screen-container > div.screen > p:nth-child(1)").classList.toggle("active");
+        document.querySelector("#profile > div > div.screen-container > div.screen > div.inner-screen > p:nth-child(1)").classList.toggle("active");
     })
     console.log("BREAK")
   })
 });
 
-const highlight = document.querySelectorAll(".screen > p");
+const highlight = document.querySelectorAll(".inner-screen > p");
 highlight[0].classList.toggle("active");
 
 document.querySelectorAll("#controller_up").forEach((upButton) => {
@@ -90,12 +90,12 @@ document.querySelectorAll("#controller_left").forEach((leftButton) => {
   })
 });
 
-const menuOne = document.querySelector("#profile > div > div.screen-container > div.screen > p:nth-child(1)");
-const menuTwo = document.querySelector("#profile > div > div.screen-container > div.screen > p:nth-child(2)");
-const menuThree = document.querySelector("#profile > div > div.screen-container > div.screen > p:nth-child(3)");
+const menuOne = document.querySelector("#profile > div > div.screen-container > div.screen > div.inner-screen > p:nth-child(1)");
+const menuTwo = document.querySelector("#profile > div > div.screen-container > div.screen > div.inner-screen > p:nth-child(2)");
+const menuThree = document.querySelector("#profile > div > div.screen-container > div.screen > div.inner-screen > p:nth-child(3)");
 
   document.querySelectorAll("#controller_a").forEach((aButton) => {
-    document.querySelectorAll(".screen > p").forEach((action) => {
+    document.querySelectorAll(".inner-screen > p").forEach((action) => {
     aButton.addEventListener('click', () => {
       action.innerHTML = "";
       if (menuOne.classList.value === "active") {
