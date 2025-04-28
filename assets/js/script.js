@@ -1,4 +1,22 @@
+/* About me section */
+const aboutMe = {
+  paraOne: "Hello! My name's Andy and I'm a Full Stack Developer. I started my journey as a Web Developer in 2023 with a specialism in Ecommerce applications. Click to continue.. ",
+  paraTwo: "In this time, I have built up my skillset and contributed to a real world, large scale retail business as a Shopify Front End Developer. Click to continue..",
+  paraThree: "I am keen to grow my experience and knowledge as a Full Stack Developer and further my career."
+};
 
+let count = 0;
+const skyline = Object.entries(aboutMe);
+document.getElementById("aboutText").innerHTML = skyline[count][1];
+document.getElementById("aboutText").addEventListener("click", function(){
+  count++;
+  if (count >= skyline.length) {
+    count = 0;
+  }
+  this.innerHTML = skyline[count][1];
+});
+
+/* Profile section */
 const profileDetails = [{
   category: "Work Experience",
   experience: [
@@ -25,12 +43,6 @@ const profileDetails = [{
 }
 ]
 
-
-document.querySelectorAll("#about > div.about-details-section > p").forEach((aboutText) => {
-      aboutText.addEventListener('click', () => {
-        aboutText.innerHTML = "In this time, I have built up my skillset and contributed to a real world, large scale retail business. I am keen to expand my skills, knowledge and experience!";
-      })
-});
 const menuOption = profileDetails.filter((value) => value.category);
 document.querySelectorAll(".inner-screen").forEach((text) => {
   for (i = 0; i < menuOption.length; i++) {
@@ -68,11 +80,6 @@ document.querySelectorAll("#controller_up").forEach((upButton) => {
     }
   })
 });
-document.querySelectorAll("#controller_right").forEach((rightButton) => {
-  rightButton.addEventListener('click', () => {
-    console.log("Right button pressed!")
-  })
-});
 document.querySelectorAll("#controller_down").forEach((downButton) => {
   downButton.addEventListener('click', () => {
     if (highlight[0].classList.value == "active") {
@@ -82,6 +89,11 @@ document.querySelectorAll("#controller_down").forEach((downButton) => {
       highlight[1].classList.toggle("active");
       highlight[2].classList.toggle("active");
     }
+  })
+});
+document.querySelectorAll("#controller_right").forEach((rightButton) => {
+  rightButton.addEventListener('click', () => {
+    console.log("Right button pressed!")
   })
 });
 document.querySelectorAll("#controller_left").forEach((leftButton) => {
@@ -100,19 +112,13 @@ const menuThree = document.querySelector("#profile > div > div.screen-container 
       action.innerHTML = "";
       if (menuOne.classList.value === "active") {
         menuOne.classList.toggle("active");
-        action.innerHTML += '<p>' + profileDetails[0].experience[0].company + '</p>' + '<p>' + profileDetails[0].experience[0].role + '</p>' + '<p>' + profileDetails[0].experience[0].date + '</p>';
-        menuTwo.classList.toggle("hide");
-        menuThree.classList.toggle("hide");
+        action.innerHTML = '<p>' + profileDetails[0].experience[0].company + '</p>' + '<p>' + profileDetails[0].experience[0].role + '</p>' + '<p>' + profileDetails[0].experience[0].date + '</p>';
       } else if (menuTwo.classList.value === "active") {
         menuTwo.classList.toggle("active");
-        action.innerHTML += '<p>' + profileDetails[1].qualifications[0].institution + '</p>' + '<p>' + profileDetails[1].qualifications[0].qualification + '</p>' + '<p>' + profileDetails[1].qualifications[0].grade + '</p>';
-        menuTwo.classList.toggle("hide");
-        menuThree.classList.toggle("hide");
+        action.innerHTML = '<p>' + profileDetails[1].qualifications[0].institution + '</p>' + '<p>' + profileDetails[1].qualifications[0].qualification + '</p>' + '<p>' + profileDetails[1].qualifications[0].grade + '</p>';
       } else if (menuThree.classList.value === "active") {
         menuThree.classList.toggle("active");
-        action.innerHTML += '<p>' + profileDetails[2].languages[0].language + '</p>' + '<p>' + profileDetails[2].languages[1].frameworks + '</p>' + '<p>' + profileDetails[2].languages[2].version + '</p>';
-        menuTwo.classList.toggle("hide");
-        menuThree.classList.toggle("hide");
+        action.innerHTML = '<p>' + profileDetails[2].languages[0].language + '</p>' + '<p>' + profileDetails[2].languages[1].frameworks + '</p>' + '<p>' + profileDetails[2].languages[2].version + '</p>';
       }
     })
   });
