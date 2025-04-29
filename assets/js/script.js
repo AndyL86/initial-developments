@@ -35,9 +35,9 @@ const profileDetails = [{
 {
   category: "Coding Languages",
   languages: [
-    {language: ["HTML", "CSS", "Javascript", "Python"]},
-    {frameworks: ["Shopify Liquid", "Bootstrap", "Tailwind", "JQuery", "ReactJS", "Django"]},
-    {version: ["GIT", "SourceTree", "Bitbucket"]},
+    {language: ["HTML", " CSS", " Javascript", " Python"]},
+    {frameworks: ["Shopify Liquid", " Bootstrap", " Tailwind", " JQuery", " ReactJS", " Django"]},
+    {version: ["GIT", " SourceTree", " Bitbucket"]},
     {analytics: ["Google analytics", "Google tag manager", "Dynamic Yield"]}
   ]
 }
@@ -113,13 +113,13 @@ const menuThree = document.querySelector("#profile > div > div.screen-container 
       action.innerHTML = "";
       if (menuOne.classList.value === "active") {
         menuOne.classList.toggle("active");
-        action.innerHTML = '<p>' + profileDetails[0].experience[0].company + '</p>' + '<p>' + profileDetails[0].experience[0].role + '</p>' + '<p>' + profileDetails[0].experience[0].date + '</p>';
+        action.innerHTML = '<p>' + 'Company: ' + profileDetails[0].experience[0].company + '</p>' + '<p>' + 'Role: ' + profileDetails[0].experience[0].role + '</p>' + '<p>' + 'Date: ' + profileDetails[0].experience[0].date + '</p>';
       } else if (menuTwo.classList.value === "active") {
         menuTwo.classList.toggle("active");
-        action.innerHTML = '<p>' + profileDetails[1].qualifications[0].institution + '</p>' + '<p>' + profileDetails[1].qualifications[0].qualification + '</p>' + '<p>' + profileDetails[1].qualifications[0].grade + '</p>';
+        action.innerHTML = '<p>' + 'Institution: ' + profileDetails[1].qualifications[0].institution + '</p>' + '<p>' + 'Qualification: ' + profileDetails[1].qualifications[0].qualification + '</p>' + '<p>' + 'Grade: ' + profileDetails[1].qualifications[0].grade + '</p>';
       } else if (menuThree.classList.value === "active") {
         menuThree.classList.toggle("active");
-        action.innerHTML = '<p>' + profileDetails[2].languages[0].language + '</p>' + '<p>' + profileDetails[2].languages[1].frameworks + '</p>' + '<p>' + profileDetails[2].languages[2].version + '</p>';
+        action.innerHTML = '<p>' + 'Languages: ' + profileDetails[2].languages[0].language + '</p>' + '<p>' + 'Frameworks: ' + profileDetails[2].languages[1].frameworks + '</p>' + '<p>' + 'Version Control: ' + profileDetails[2].languages[2].version + '</p>' + '<p>' + 'Analytics: ' + profileDetails[2].languages[3].analytics + '</p>';
       }
     })
   });
