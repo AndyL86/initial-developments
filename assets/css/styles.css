@@ -35,47 +35,11 @@ li {
     border-bottom: 8px black solid;
 }
 
-/* .section-header-box {
-    background-color: #d13b3b;
-    margin: 0 3rem 3rem 3rem;
-    width: 300px;
-    border: 7px black solid;
-    clip-path: polygon(
-    0px calc(100% - 12px),
-    3px calc(100% - 12px),
-    3px calc(100% - 6px),
-    6px calc(100% - 6px),
-    6px calc(100% - 3px),
-    12px calc(100% - 3px),
-    12px 100%,
-    calc(100% - 12px) 100%,
-    calc(100% - 12px) calc(100% - 3px),
-    calc(100% - 6px) calc(100% - 3px),
-    calc(100% - 6px) calc(100% - 6px),
-    calc(100% - 3px) calc(100% - 6px),
-    calc(100% - 3px) calc(100% - 12px),
-    100% calc(100% - 12px),
-    100% 12px,
-    calc(100% - 3px) 12px,
-    calc(100% - 3px) 6px,
-    calc(100% - 6px) 6px,
-    calc(100% - 6px) 3px,
-    calc(100% - 12px) 3px,
-    calc(100% - 12px) 0px,
-    12px 0px,
-    12px 3px,
-    6px 3px,
-    6px 6px,
-    3px 6px,
-    3px 12px,
-    0px 12px
-  );
-} */
-
 /* Navbar */
 .navbar {
     background-color: #eaefef;
     border-bottom: 8px black solid;
+    height: 90px;
 }
 
 .navbar-brand {
@@ -979,6 +943,90 @@ li {
   padding-top: 15px;
 }
 
+@media screen and (max-width: 1400px) {
+  .gameboy-container {
+    height: 640px;
+    max-width: 430px;
+    margin: 0px;
+  }
+
+  .screen-container {
+    max-width: 400px;
+    height: 307px;
+    left: 15px;
+    margin: 0;
+  }
+
+  .screen-headline {
+    width: 426px;
+    height: 16px;
+    left: 0;
+    margin-left: 0px;
+  }
+
+  .screen-container .screen {
+    width: 302px;
+      height: 230px;
+      left: 57%;
+      top: 66%;
+  }
+
+  .screen-container .screen-headline {
+    width: 385px;
+      height: 19px;
+      left: 110%;
+    margin-left: -431px;
+  }
+
+  .screen-container .screen-headline span {
+    left: 88px;
+  }
+
+  .cross-container {
+    height: 150px;
+    width: 150px;
+    top: 420px;
+    left: 25px;
+  }
+
+  .screen-container .battery-light {
+    top: 98px;
+    left: 10px;
+  }
+
+  .buttons-a-b {
+    height: 80px;
+    width: 200px;
+    top: 442px;
+    right: 28px;
+  }
+
+  .screen-container .battery-light span {
+    font-size: 10px;
+  }
+
+  .cross-container .cross .top-down {
+    width: 50px;
+    left: 55%;
+  }
+
+  .cross-container .cross .left-right {
+    top: 55%;
+    height: 50px;
+  }
+  .cross-container .cross:before {
+    height: 50px;
+    width: 50px;
+    left: 55%;
+    top: 50%;
+  }
+  .buttons-a-b .button-a, .buttons-a-b .button-b {
+    height: 65px;
+      width: 65px;
+      top: 7px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-heading {
     left: 110px;
@@ -1182,87 +1230,7 @@ li {
         max-width: 90%;
         justify-content: space-around;
     }
-    .gameboy-container {
-      height: 640px;
-      max-width: 430px;
-      margin: 0px;
-    }
-
-    .screen-container {
-      max-width: 400px;
-      height: 307px;
-      left: 15px;
-      margin: 0;
-    }
-
-    .screen-headline {
-      width: 426px;
-      height: 16px;
-      left: 0;
-      margin-left: 0px;
-    }
-
-    .screen-container .screen {
-      width: 302px;
-        height: 230px;
-        left: 57%;
-        top: 66%;
-    }
-
-    .screen-container .screen-headline {
-      width: 385px;
-        height: 19px;
-        left: 110%;
-      margin-left: -431px;
-    }
-
-    .screen-container .screen-headline span {
-      left: 88px;
-    }
-
-    .cross-container {
-      height: 150px;
-      width: 150px;
-      top: 420px;
-      left: 25px;
-    }
-
-    .screen-container .battery-light {
-      top: 98px;
-      left: 10px;
-    }
-
-    .buttons-a-b {
-      height: 80px;
-      width: 200px;
-      top: 442px;
-      right: 28px;
-    }
-
-    .screen-container .battery-light span {
-      font-size: 10px;
-    }
-
-    .cross-container .cross .top-down {
-      width: 50px;
-      left: 55%;
-    }
-
-    .cross-container .cross .left-right {
-      top: 55%;
-      height: 50px;
-    }
-    .cross-container .cross:before {
-      height: 50px;
-      width: 50px;
-      left: 55%;
-      top: 50%;
-    }
-    .buttons-a-b .button-a, .buttons-a-b .button-b {
-      height: 65px;
-        width: 65px;
-        top: 7px;
-    }
+    
 }
 
 @media screen and (max-width: 450px) {
