@@ -903,6 +903,7 @@ li {
 .shopify-card {
   padding: 15px 15px 0px 15px;
   border: 2px #99c14f solid;
+  cursor: pointer;
 }
 
 .shopify-card p {
@@ -958,6 +959,16 @@ li {
   margin: 0;
   font-weight: 600;
   padding-right: 15px;
+}
+
+.shopify-modal-body {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.shopify-modal-content {
+  top: 120px;
+  padding: 5px;
 }
 
 .back-container {
