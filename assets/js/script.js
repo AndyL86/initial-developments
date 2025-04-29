@@ -119,7 +119,16 @@ const menuThree = document.querySelector("#profile > div > div.screen-container 
         action.innerHTML = '<p>' + 'Institution: ' + profileDetails[1].qualifications[0].institution + '</p>' + '<p>' + 'Qualification: ' + profileDetails[1].qualifications[0].qualification + '</p>' + '<p>' + 'Grade: ' + profileDetails[1].qualifications[0].grade + '</p>';
       } else if (menuThree.classList.value === "active") {
         menuThree.classList.toggle("active");
-        action.innerHTML = '<p>' + 'Languages: ' + profileDetails[2].languages[0].language + '</p>' + '<p>' + 'Frameworks: ' + profileDetails[2].languages[1].frameworks + '</p>' + '<p>' + 'Version Control: ' + profileDetails[2].languages[2].version + '</p>' + '<p>' + 'Analytics: ' + profileDetails[2].languages[3].analytics + '</p>';
+        action.innerHTML = '<p>' + 'Languages: ' + profileDetails[2].languages[0].language + '</p>' + '<p>' + 'Frameworks: ' + profileDetails[2].languages[1].frameworks + '</p>' + '<p>' + 'Version Control: ' + profileDetails[2].languages[2].version + '</p>';
+        const removeMarginOne = document.querySelectorAll(".inner-screen > p");
+        const removeMarginTwo = document.querySelectorAll(".inner-screen > p > p");
+        for (i = 0; i < removeMarginOne.length; i++) {
+        removeMarginOne[i].style.marginBottom = "0px";
+        removeMarginOne[0].style.paddingTop = "5px";
+        }
+        for (i = 0; i < removeMarginTwo.length; i++) {
+          removeMarginTwo[i].style.marginBottom = "0px";
+          }
       }
     })
   });
