@@ -242,6 +242,8 @@ li {
   color: aqua;
   box-shadow: inset 0px 0px 7px 2px #666;
   cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-title {
@@ -1039,6 +1041,10 @@ li {
 
     .portfolio-item {
       background-color: white;
+    }
+
+    .shopify-portfolio-item {
+      width: 78%;
     }
 
     .portfolio-heading {
