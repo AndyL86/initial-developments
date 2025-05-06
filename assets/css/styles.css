@@ -318,14 +318,23 @@ li {
 
 /* Footer */
 .footer {
-    background-color: #84857F;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    background-color: #252925;
     color: #fff;
 }
 
+.quick-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
 .copyright {
-    background-color: #252925;
+  align-content: center;
 }
 
 /* Profile section */
@@ -343,7 +352,7 @@ li {
   font-family: 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 50px auto;
+  margin: 50px 0px auto;
   flex-shrink: 0;
 }
 .screen-container {
@@ -924,11 +933,6 @@ li {
   padding-right: 15px;
 }
 
-/* .shopify-modal-body {
-  position: relative;
-  flex: 1 1 auto;
-} */
-
 .shopify-modal-content {
   top: 120px;
   padding: 5px;
@@ -940,6 +944,20 @@ li {
   justify-content: flex-start;
   margin-left: 20px;
   padding-top: 15px;
+}
+
+.language-logos {
+  padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.code-logo {
+  height: 80px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -1178,6 +1196,14 @@ li {
     .about-flash {
         max-width: 330px;
         padding-top: 105px;
+    }
+
+    .code-logo {
+      height: 30px;
+    }
+
+    .copyright {
+      padding-top: 25px;
     }
 
 }
