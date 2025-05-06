@@ -924,10 +924,10 @@ li {
   padding-right: 15px;
 }
 
-.shopify-modal-body {
+/* .shopify-modal-body {
   position: relative;
   flex: 1 1 auto;
-}
+} */
 
 .shopify-modal-content {
   top: 120px;
