@@ -337,6 +337,11 @@ li {
   align-content: center;
 }
 
+.footer-menu {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Profile section */
 #profile {
   display: flex;
@@ -1201,6 +1206,10 @@ li {
 
     .copyright {
       padding-top: 25px;
+    }
+
+    .footer-menu {
+      flex-direction: column;
     }
 
 }
