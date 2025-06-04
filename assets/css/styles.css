@@ -266,16 +266,25 @@ li {
 }
 
 .main-portfolio-img {
-    height: 245px;
+    height: auto;
     box-shadow: 9px 8px #999;
     cursor: pointer;
     max-width: 100%;
     border: 3px grey groove;
+    padding: 0px 0px 0px 20px;
+    background-color: darkgray;
 }
 
 .main-portfolio-img:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.portfolio-tab {
+  writing-mode: sideways-lr;
+  position: absolute;
+  margin-top: 55px;
+  font-weight: 700;
 }
 
 /* About section */
@@ -1157,7 +1166,7 @@ li {
     }
 
     .shopify-portfolio-item {
-      width: 78%;
+      width: 74%!important;
     }
 
     .portfolio-heading {
@@ -1189,11 +1198,6 @@ li {
       width: 65px;
       height: 65px;
       padding: 15px;
-    }
-
-    .main-portfolio-img {
-        padding: 10px;
-        height: auto;
     }
 
     .portfolio-item {
