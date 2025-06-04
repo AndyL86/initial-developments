@@ -209,6 +209,25 @@ li {
   align-items: center;
 }
 
+.profile-button {
+  display: flex;
+  position: relative;
+  top: 155px;
+  left: 80px;
+  text-decoration: none;
+  border: 2px black solid;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 21px;
+  background-color: #aba9a9;
+  color: rgb(241, 45, 153);
+  box-shadow: inset 0px 0px 7px 2px #666;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-title {
     text-align: center;
     padding: 15px;
@@ -348,6 +367,7 @@ li {
   flex-direction: column;
   align-items: center;
   background-color: #eae8e4;
+  padding-top: 40px;
 }
 /* Code by https://github.com/attackemartin/css-gameboy */
 .gameboy-container {
@@ -879,8 +899,9 @@ li {
 
 .shopify-card {
   padding: 15px 15px 0px 15px;
-  border: 2px #99c14f solid;
+  border: 1px #99c14f solid;
   cursor: pointer;
+  border-radius: 2px;
 }
 
 .shopify-card p {
@@ -912,7 +933,7 @@ li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(171deg, rgba(229, 239, 213, 1) 0%, rgba(87, 199, 133, 1) 48%, rgba(104, 237, 182, 0.54) 100%);
+  background: linear-gradient(171deg, rgb(250 251 249) 0%, rgb(154 231 186) 48%, rgb(198 253 230 / 54%) 100%);
 }
 
 .shopify-header-image {
@@ -1053,6 +1074,20 @@ li {
   .portfolio-heading {
     left: 110px;
   }
+
+  .profile-button {
+    left: 120px;
+    top: 130px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .back-button {
+    left: 90px;
+    top: 130px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media screen and (min-width: 1160px) {
@@ -1142,6 +1177,14 @@ li {
 
     .back-button {
       left: 15px;
+      top: 165px;
+      width: 65px;
+      height: 65px;
+      padding: 15px;
+    }
+
+    .profile-button {
+      left: 25px;
       top: 165px;
       width: 65px;
       height: 65px;
@@ -1366,6 +1409,14 @@ li {
     }
 
     .back-button {
+        top: 150px;
+        left: 15px;
+        width: 50px;
+        height: 45px;
+        padding: 6px;
+    }
+
+    .profile-button {
         top: 150px;
         left: 25px;
         width: 50px;
