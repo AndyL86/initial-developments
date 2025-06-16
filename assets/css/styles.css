@@ -884,6 +884,87 @@ li {
   background-size: contain;
 }
 
+/* Profile page */
+.tech-stack {
+  text-shadow: 3px 3px 3px black;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f9f8f6;
+  -webkit-text-stroke: 2px black;
+}
+
+.tech-stack-box {
+  border: 8px solid grey;
+  width: 320px;
+  border-radius: 48%;
+  background: #9eed5c;
+  background: linear-gradient(136deg, rgba(158, 237, 92, 1) 9%, rgba(166, 40, 40, 0.99) 100%);
+}
+
+.language-stats {
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.stat-marker {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: inset -2px -1px 3px 1px #666;
+}
+
+.marker-border {
+  width: 21px;
+  height: 21px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+
+.marker-one {
+  background-color: rgb(222, 5, 5);
+}
+
+.marker-two {
+  background-color: rgb(242, 23, 23);
+}
+
+.marker-three {
+  background-color: rgb(248, 57, 23);
+}
+
+.marker-four {
+  background-color: rgb(249, 83, 12);
+}
+
+.marker-five {
+  background-color: rgb(247, 112, 33);
+}
+
+.marker-six {
+  background-color: rgb(247, 158, 33);
+}
+
+.marker-seven {
+  background-color: rgb(247, 194, 33);
+}
+
+.marker-eight {
+  background-color: rgb(247, 233, 33);
+}
+
+.marker-nine {
+  background-color: rgb(226, 247, 33);
+}
+
+.marker-ten {
+  background-color: rgb(162, 247, 33);
+}
+
 /* Shopify page */
 .shopify-portfolio-item {
   display: flex;
