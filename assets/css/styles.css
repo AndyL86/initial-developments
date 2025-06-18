@@ -1684,7 +1684,7 @@ li {
   }
 
   .tech-stack-lang p {
-    font-size: x-large;
+    font-size: larger;
   }
 
   .img-border {
@@ -1692,7 +1692,7 @@ li {
   }
 
   .language-stats {
-    margin-bottom: 28px;
+    margin-bottom: 21px;
   }
 
   .stat-marker {
@@ -1706,7 +1706,7 @@ li {
   }
 
   .tech-stack-lang {
-    width: 40%;
+    width: 35%;
   }
 
   .tech-stack-box {
