@@ -39,6 +39,7 @@
       src="https://kit.fontawesome.com/e83fc612cc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -88,8 +89,8 @@
         </a>
       </div>
     </nav>
-    <section class="tech-stack-section">
-        <div class="tech-stack-container"">
+    <section id="tech-stack-section">
+        <div class="tech-stack-container">
           <div class="tech-stack-box">
             <h3 class="tech-stack-title">Tech Stack</h3>
           </div>
@@ -244,111 +245,30 @@
           </div> -->
         </div>
     </section>
-    <!-- <section id="profile">
-      <div class="gameboy-container">
-        <div class="screen-container">
-          <div class="screen-headline">
-            <span>PROFESSIONAL PROFILE</span>
-          </div>
-
-          <div class="battery-light">
-            <span>BATTERY</span>
-          </div>
-
-          <div class="screen">
-            <div class="inner-screen"></div>
-            <div>
-              <p>
-                <i class="fas fa-caret-up"></i
-                ><i class="fas fa-caret-down"></i>: Select <br />
-                A: Confirm B: Back
-              </p>
+    <section id="github-repos">
+      <div class="d-flex flex-column align-items-center">
+          <h3>
+            View My GitHub Projects
+          </h3>
+          <h5>
+            You can also search on other user profiles
+          </h5>
+          <div class="d-flex flex-row">
+            <div class="p-5">
+              <input
+                type="text"
+                id="gh-username"
+                value="andyl86"
+                oninput="fetchGitHubInformation()"
+              />
+              <div id="gh-user-data"></div>
+            </div>
+            <div class="p-5">
+              <div id="gh-repo-data"></div>
             </div>
           </div>
-        </div>
-
-        <div id="controller">
-          <div class="buttons-a-b">
-            <div class="button-b button-key-j" id="controller_b"></div>
-
-            <div class="button-a button-key-k" id="controller_a"></div>
-          </div>
-
-          <div class="cross-container">
-            <div class="spike"><div></div></div>
-            <div class="spike"><div></div></div>
-            <div class="spike"><div></div></div>
-            <div class="spike"><div></div></div>
-
-            <div class="cross" id="controller_dpad">
-              <div class="top-down">
-                <div class="button-top button-key-w" id="controller_up">
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                </div>
-                <div class="button-bottom button-key-s" id="controller_down">
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                </div>
-              </div>
-
-              <div class="left-right">
-                <div class="button-left button-key-a" id="controller_left">
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                </div>
-                <div class="button-right button-key-d" id="controller_right">
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                  <div class="button-stripe"></div>
-                </div>
-              </div>
-              <div class="cross-middle-bumb"></div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="language-logos">
-        <a
-          ><img
-            class="code-logo"
-            src="/assets/images/HTML5_logo_and_wordmark.png"
-            alt="html logo"
-            height="100px"
-        /></a>
-        <a
-          ><img
-            class="code-logo"
-            src="/assets/images/CSS3_logo_and_wordmark.png"
-            alt="css logo"
-            height="100px"
-        /></a>
-        <a
-          ><img
-            class="code-logo"
-            src="/assets/images/js-_logo.png"
-            alt="javascript logo"
-            height="100px"
-        /></a>
-        <a
-          ><img
-            class="code-logo"
-            src="/assets/images/Bootstrap_logo.png"
-            alt="bootstrap logo"
-            height="100px"
-        /></a>
-        <a
-          ><img
-            class="code-logo"
-            src="/assets/images/React_Logo_SVG.png"
-            alt="react logo"
-            height="100px"
-        /></a>
-      </div>
-    </section> -->
+    </section>
     <footer class="footer text-center" id="contact">
       <div class="py-5 text-center text-white footer-menu">
         <div class="col-12 col-md-6 quick-links">
@@ -367,6 +287,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="assets/js/profile.js"></script> -->
+    <script src="assets/js/profile.js"></script>
   </body>
 </html>

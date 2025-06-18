@@ -957,7 +957,7 @@ li {
 }
 
 /* Profile page */
-.tech-stack-section {
+#tech-stack-section {
   background: #b0bfcd;
   padding-top: 100px;
 }
@@ -1132,6 +1132,10 @@ li {
 
 .marker-ten {
   background-color: rgb(162, 247, 33);
+}
+
+#github-repos {
+  padding-top: 40px;
 }
 
 /* Shopify page */
@@ -1685,6 +1689,7 @@ li {
 
   .tech-stack-lang p {
     font-size: larger;
+    -webkit-text-stroke: 0.5px black;
   }
 
   .img-border {
